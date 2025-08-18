@@ -29,3 +29,25 @@ Embora o conceito seja novo para muitos programadores, com prática ele se torna
 ## Como funciona em Rust?
 
 Você guarda ponteiros na stack que apontam para dados armazenados na heap, garantindo eficiência e segurança por meio das regras de ownership.
+
+
+# Diferença entre String Literal (`&str`) e `String` em Rust
+
+## O que é?
+
+- **String Literal (`&str`)**: texto fixo, imutável e embutido no programa.
+- **String (`String`)**: string mutável, armazenada na heap, que pode crescer e mudar em tempo de execução.
+
+## Exemplo de Código
+
+```rust
+fn main() {
+    // String literal (imutável)
+    let literal = "Olá, mundo!";
+    println!("Literal: {}", literal);
+
+    // String mutável (alocada na heap)
+    let mut string = String::from("Olá, mundo!");
+    string.push_str(" Como vai?");
+    println!("String: {}", string);
+}
