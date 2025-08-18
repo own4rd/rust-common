@@ -8,6 +8,24 @@ Esse modelo de propriedade ajuda a manter a segurança da memória sem que o des
 
 Embora o conceito seja novo para muitos programadores, com prática ele se torna natural e intuitivo.
 
+### Ownership e Move em Rust
+
+## O que acontece quando movemos uma String?
+
+Em Rust, quando você atribui uma `String` a outra variável, a posse do valor é **movida** para a nova variável. A variável original fica inválida e não pode mais ser usada.
+
+## Exemplo de Código
+
+```rust
+fn main() {
+    let s1 = String::from("hello");
+    let s2 = s1;
+
+    // Isso causará erro de compilação, pois s1 não é mais válido!
+    println!("{s1}, world!");
+}
+
+
 ---
 
 ## Stack vs Heap
