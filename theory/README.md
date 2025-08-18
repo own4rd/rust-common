@@ -24,6 +24,7 @@ fn main() {
     // Isso causará erro de compilação, pois s1 não é mais válido!
     println!("{s1}, world!");
 }
+```
 
 
 ## Stack vs Heap
