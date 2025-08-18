@@ -26,8 +26,6 @@ fn main() {
 }
 
 
----
-
 ## Stack vs Heap
 
 ### Stack
