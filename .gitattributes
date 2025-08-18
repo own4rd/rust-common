@@ -1,0 +1,7 @@
+# Faz o GitHub ignorar arquivos de build, Makefiles e outros na detecção de linguagem
+Makefile linguist-detectable=false
+*.d linguist-detectable=false
+*.so linguist-detectable=false
+*.rlib linguist-detectable=false
+*.rmeta linguist-detectable=false
+target/ linguist-vendored
